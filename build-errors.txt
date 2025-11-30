@@ -1,0 +1,10 @@
+﻿src/app/checkout/page.tsx(32,9): error TS2322: Type 'Resolver<{ fullName: string; phone: string; address: string; city: string; state: string; zipCode: string; country?: string | undefined; notes?: string | undefined; }, any, { fullName: string; phone: string; ... 5 more ...; notes?: string | undefined; }>' is not assignable to type 'Resolver<{ fullName: string; phone: string; address: string; city: string; state: string; zipCode: string; country: string; notes?: string | undefined; }, any, { fullName: string; phone: string; address: string; ... 4 more ...; notes?: string | undefined; }>'.
+  Types of parameters 'options' and 'options' are incompatible.
+    Type 'ResolverOptions<{ fullName: string; phone: string; address: string; city: string; state: string; zipCode: string; country: string; notes?: string | undefined; }>' is not assignable to type 'ResolverOptions<{ fullName: string; phone: string; address: string; city: string; state: string; zipCode: string; country?: string | undefined; notes?: string | undefined; }>'.
+      Type 'string | undefined' is not assignable to type 'string'.
+        Type 'undefined' is not assignable to type 'string'.
+src/app/checkout/page.tsx(96,42): error TS2345: Argument of type '(deliveryInfo: DeliveryInfo) => Promise<void>' is not assignable to parameter of type 'SubmitHandler<TFieldValues>'.
+  Types of parameters 'deliveryInfo' and 'data' are incompatible.
+    Type 'TFieldValues' is not assignable to type '{ fullName: string; phone: string; address: string; city: string; state: string; zipCode: string; country: string; notes?: string | undefined; }'.
+      Type 'FieldValues' is missing the following properties from type '{ fullName: string; phone: string; address: string; city: string; state: string; zipCode: string; country: string; notes?: string | undefined; }': fullName, phone, address, city, and 3 more.
+src/app/products/[id]/page.tsx(236,50): error TS18048: 'product.supplierName' is possibly 'undefined'.
